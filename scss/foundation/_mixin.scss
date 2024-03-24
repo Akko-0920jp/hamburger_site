@@ -1,1 +1,42 @@
 //mixin.scssを作る//
+
+// _mixin.scss
+$mq-breakpoints: (
+  'xs': 321px,
+  'sm': 576px,
+  'md': 768px,
+  'lg': 1024px,
+  'xl': 1280px,
+  // 'xxl': 1920px,
+) !default;
+@mixin mq($breakpoint: md, $rule: min) {
+  $breakpoint: map-get($mq-breakpoints, $breakpoint);
+  @if $rule == max {
+    $breakpoint: $breakpoint - 1px;
+  }
+  @media screen and (#{$rule}-width: $breakpoint) {
+    @content;
+  }
+}
+
+// 使う時（min-width）
+.element01 {
+  // ここにsp用スタイル
+  @include mq {
+    // @media screen and (min-width: 768px)と同じ
+  }
+  @include mq(lg) {
+    // @media screen and (min-width: 1024px)と同じ
+  }
+}
+
+// 使う時（max-width）
+.element02 {
+  // ここにpc用スタイル
+  @include mq(lg, max) {
+    // @media screen and (max-width: 1023px)と同じ
+  }
+  @include mq(md, max) {
+    // @media screen and (max-width: 767px)と同じ
+  }
+}

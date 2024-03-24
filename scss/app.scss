@@ -2,8 +2,12 @@
 // Foundation
 // ==========================================
 
- @use 'foundation/base' as base; //ディレクトリ指定の方法忘れてた(3/3)
+ @use 'foundation/base' as base; //appファイルの置き場が不適切で指定できなかった
  @use 'foundation/reset' as reset;
+ @use 'foundation/color' as color;
+ @use 'foundation/font' as font;
+ @use 'foundation/function' as function;
+ @use 'foundation/mixin' as mixin;
 
 // ==========================================
 // Layout
