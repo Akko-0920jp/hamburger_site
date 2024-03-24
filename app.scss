@@ -1,0 +1,50 @@
+// ==========================================
+// Foundation
+// ==========================================
+
+ @use 'foundation/base' as base; //ディレクトリ指定の方法忘れてた(3/3)
+ @use 'foundation/reset' as reset;
+
+// ==========================================
+// Layout
+// ==========================================
+
+ @use 'layout/header' as header;
+ @use 'layout/footer' as footer;
+ @use 'layout/main' as main;
+ @use 'layout/sidebar' as sidebar;
+
+// ==========================================
+// Object
+// ==========================================
+
+
+// ------------------------------------------
+// component
+// ------------------------------------------
+ 
+ @use 'object/component/button' as button;
+ @use 'object/component/dialog' as dialog;
+ @use 'object/component/grid' as grid;
+ @use 'object/component/media' as media;
+
+// ------------------------------------------
+// Project
+// ------------------------------------------
+
+ @use 'object/project/articles' as articles;
+ @use 'object/project/comments' as comments;
+ @use 'object/project/gallery' as gallery;
+ @use 'object/project/profile' as profile;
+
+// ------------------------------------------
+// Utility
+// ------------------------------------------
+ 
+ @use 'object/utility/align' as align;
+ @use 'object/utility/clearfix' as clearfix;
+ @use 'object/utility/margin' as margin;
+ @use 'object/utility/position' as position;
+ @use 'object/utility/size' as size;
+ @use 'object/utility/text' as text;
+

@@ -1,0 +1,264 @@
+//--------------------------------------------//
+//-------Font-definition---------------------//
+//--------------------------------------------//
+
+// @import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+
+//--------------------------------------------//
+//-------Color-definition---------------------//
+//--------------------------------------------//
+
+
+$main-color:#FFFDFA;
+$second-color:#F2EDE9;
+$header-color:#FFF7EF;
+$footer-color:#9A836E;
+$panel-color:#3C2B1C;
+$main-text:#3C2A10;
+$normal-text:#707070;
+
+//--------------------------------------------//
+//-------Responsive---------------------------//
+//--------------------------------------------//
+
+
+
+
+//--------------------------------------------//
+//-------Foundation---------------------------//
+//--------------------------------------------//
+
+
+*{
+    box-sizing:border-box;
+}
+
+body {
+    background-color: pink;
+    font-family: 'Muli', sans-serif;
+    //display:flex;
+    //flex-direction: column;
+    //justify-content: center;
+    //height: 100vh;//
+    //overflow: hidden;
+    margin: 0;
+    padding: 0;
+    max-width:1200px;
+}
+
+
+
+//--------------------------------------------//
+//-------component-------------------------------//
+//--------------------------------------------//
+
+.button {
+    border-radius: 5px;
+    background-color:lightgray;
+    border:1px $normal-text solid;
+}
+
+
+//--------------------------------------------//
+//-------header-------------------------------//
+//--------------------------------------------//
+
+
+.header-wrapper {
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    display:flex;
+    width:100%;
+    max-width:auto;
+    //position:absolute;
+    background-color: yellow;
+    h1 {
+        padding-left:30px;
+    }   
+}
+
+.search-wrapper {
+    width:300px;
+    display:flex;
+    justify-content: space-around;
+}
+
+input {
+    height: 30px;
+    width:200px;
+    border:1px $normal-text solid;
+    border-radius:5px;
+    background-color:white;
+}
+
+.button_admit {
+    height: 30px;
+    width: 60px;
+    border:1px $normal-text solid;
+    border-radius:5px;
+}
+
+.main-visual {
+    background-image:url("https://source.unsplash.com/random");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: auto;
+    display:flex;
+    //padding-top:100px;
+    h2 {
+        display:flex;
+        align-items: center;
+        padding:0px;
+        margin:0px;
+    }
+}
+
+.main-visual_narrow {
+    height:200px;
+}
+
+
+//--------------------------------------------//
+//-------main---------------------------------//
+//--------------------------------------------//
+
+
+main {
+    display:flex;
+    width:100%;
+}
+
+.main-wrapper {
+    justify-content: space-between;
+    width:75%;
+}
+
+.contents-wrapper {
+    background-color:grey;
+}
+
+//--------------------------------------------//
+//-------main_front-page----------------------//
+//--------------------------------------------//
+
+
+.takeout-wrapper {
+    height:500px;
+    display: flex;//OK
+    justify-content: center;
+    background-color: aqua;
+    width:auto;
+}
+
+.location {
+    width:300px;
+    height:500px;
+    background-color: yellow;
+    margin-right:20px;
+}
+
+.map-wrapper {
+    background-image:url("https://source.unsplash.com/random");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: auto;
+    .map-text{
+        background-color:rgba(255, 0, 0, 0.6);
+        color:white;
+        width: 50%;
+        height:100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+    }
+}
+
+//--------------------------------------------//
+//-------main_archive----------------------//
+//--------------------------------------------//
+
+.menu-card {
+    background-color:pink;
+    display:flex;
+    height:350px;
+    width:100%;
+    padding:2%;
+    .menu-image {
+        width:50%;
+        height:100%;
+        background-image:url('https://source.unsplash.com/random');
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .menu-text {
+        padding:20px;
+        background-color:$panel-color;
+        color:white;
+        width:50%;
+        height:100%;
+        display:flex;
+        flex-direction: column;
+    }
+    .button_detail {
+        align-items: center;//違うなあなんだっけコレ
+        background-color: white;
+        border-radius:20px;
+        width:150px;
+        height:40px;
+    }
+}
+
+
+//--------------------------------------------//
+//-------Single-------------------------------//
+//--------------------------------------------//
+
+.menu-image {
+    height:300px;
+    width:900px;
+    //margin:20px;(1/9　深夜に消したが他ページへの影響は)
+    background-image:url('https://source.unsplash.com/random');
+    .full-width {
+        width:100%;
+        background-repeat:no-repeat;
+        background-position:center center;
+        background-size:cover;
+    }
+    .menu-image_left {
+        width:450px;
+    }
+}
+
+
+//--------------------------------------------//
+//-------sidebar-------------------------------//
+//--------------------------------------------//
+
+.sidebar {
+    background-color: green;
+    padding-top:100px;
+    width:300px;//
+    //flex:1;//これをactiveにしたら、隙間が全部sidebarに充てられた。これだと思うけどな。
+}
+.menu-list-wrapper {
+    margin-top:50px;
+}
+
+footer {
+    background-color: orange;
+    height:70px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    p {
+        margin: 0px;
+    }
+}
