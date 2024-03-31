@@ -9,47 +9,48 @@
 </head>
 <body>
 <main>    
-    <div class="main-wrapper">
-        <header class="header">
-            <div class="header-wrapper">
-                <div class="head-title">
+    <div class="l-main-wrapper"><!---->
+        <header class="l-header">
+            <div class="l-header-wrapper">
+                <div class="l-header l-header-title">
                     <h1>Hamburger</h1>
                 </div>
-                <div class="search-wrapper">
+                <div class="l-header p-search-wrapper"><!--searchのかたまりはproject扱いか-->
                     <input type="input">
-                    <button class="button_admit" type="admit">送信</button>
+                    <button class="c-button c-button_admit" type="admit">送信</button>
+                    <!--componentのc-buttonと、これのバリエーションの_admit-->
                 </div>
             </div>
-            <div class="main-visual">
+            <div class="p-main-visual"><!--画像と文字が入るからprojecto扱い？-->
                 <h2>ダミーサイト</h2>
             </div>
         </header>
-        <div class="contents-wrapper">
-            <div class="takeout-wrapper"><!--flexさせる-->
-                <div class="location take-out">
+        <div class="l-contents-wrapper"><!--contents-wrapperは何が入ってもいいはず-->
+            <div class="p-takeout-wrapper"><!--クラス名に悩むけれど、project扱いがよさそうに思う-->
+                <div class="p-takeout-wrapper location take-out"><!--CSS付けたらlocationというクラスは不要かも？-->
                     <img class="take-out-img" src="#">
                     <p>テキストテキスト</p>
                     <p>テキストテキスト</p>
                 </div>
-                <div class="location eat-in">
+                <div class="p-takeout-wrapper location eat-in">
                     <img class="eat-in-img"src="#">
                     <p>テキストテキスト</p>
                     <p>テキストテキスト</p>
                 </div>
-            </div><!--takeout-wrapperの終わり-->
-        </div><!--contents-wrapperの終わり-->
-        <div class="map-wrapper">
-            <div class="map-text">
+            </div><!--p-takeout-wrapperの終わり-->
+        </div><!--l-contents-wrapperの終わり-->
+        <div class="p-map-wrapper">
+            <div class="p-map-wrapper text">
                 <h2>テキストが入ります</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, deserunt?</p>
             </div>
         </div>
     </div><!--main-wrapperの終わり-->
         <!--サイドバー-->
-    <sidebar class="sidebar">
-        <div class="menu-list-wrapper">
+    <sidebar class="l-sidebar">
+        <div class="l-sidebar menu-list-wrapper">
             <dt><h2>バーガー</h2>
-                <dd><h3>ハンバーガー</h3></dd>
+                <dd>ハンバーガー</dd>
                 <dd>チーズバーガー</dd>
                 <dd>テリヤキバーガー</dd>
             </dt>
@@ -63,8 +64,8 @@
     </div><!--main-wrapperの終わり-->
 </main>
     
-    <footer>
-        <p class="sitename">(c)Akko 2023</p>
+    <footer class="l-footer">
+        <p class="l-footer sitename">(c)Akko 2023</p>
     </footer>
     <body>
         
